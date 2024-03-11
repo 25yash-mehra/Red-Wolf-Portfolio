@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(./boy-image.webp);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  /* background-color: black; */
+  backdrop-filter: blur(30px);
+  padding-top: 20px;
+  z-index: 2;
+}
+.logo {
+  margin-left: 12px;
+  color: rgb(255, 0, 255);
+  margin-bottom: 12px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 15px;
+}
+nav li a {
+  text-decoration: none;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+nav a:hover {
+  color: rgb(255, 0, 255);
+}
+.home {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+.home span {
+  color: rgb(255, 13, 255);
+}
+.home > h1 {
+  color: #fff;
+
+  font-size: 4rem;
+}
+.quotes {
+  position: absolute;
+  top: 70%;
+  color: #b1faf2;
+  left: 37%;
+  font-size: 1.2rem;
+}
+.quotes span {
+  color: rgb(255, 10, 255);
+}
+.resume {
+  left: 43%;
+  top: 86%;
+  position: absolute;
+}
+.resume button {
+  padding: 14px 12px;
+  font-size: 1rem;
+  background-color: rgb(143, 23, 143);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.resume button:hover {
+  background-color: rgb(255, 0, 255);
+}
+/* ............about section............ */
+.about-section {
+  margin-top: 80px;
+}
+ .about-heading {
+  text-align: center;
+}
+.about-para {
+  width: 500px;
+  margin-top: 50px;
+  padding-left: 50px;
+}
+.about-para-2 {
+  padding-top: 30px;
+  color: gray;
+}
+.mid-line {
+  margin-top: 30px;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(78, 76, 76);
+}
+.about-intro {
+  display: flex;
+  justify-content: space-around;
+}
+.about-image {
+  padding-right: 50px;
+  padding-top: 40px;
+}
+.about-content {
+  display: flex;
+}
+.Website {
+  margin-left: 12px;
+} 
+.icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+.fa-brands {
+  font-size: 36px;
+ color: #b1faf2;
+}
+.fa-square-facebook:hover{
+  color: rgb(0, 17, 255);
+}
+.fa-square-instagram:hover{
+color: rgb(255, 24, 163);
+}
+.fa-square-github:hover{
+  color:white;
+}
+.fa-square-x-twitter:hover{
+  color: rgb(43, 177, 226);
+}
+.about-image {
+  height: 300px;
+  width: 300px;
+  position:relative;
+  overflow: hidden;
+}
+.icons {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 1px;
+  color: #fff;
+  height: 0px;
+  transition: 400ms;
+}
+.icons h3{
+  visibility: hidden;
+}
+.icons .fa-brands {
+  visibility: hidden;
+}
+.about-image:hover .icons {
+  height: 170px;
+  backdrop-filter:blur(8px);
+}
+.about-image:hover h3{
+  visibility: visible;
+}
+.about-image:hover .fa-brands {
+  visibility: visible;
+}
+.brands {
+  display: flex;
+  justify-content: space-around;
+}
+/* ..............skills section............ */
+.skills-section {
+  margin-top: 80px;
+  /* background-color: rgb(255, 255, 255); */
+  /* color: white; */
+}
+.skills-heading{
+  text-align: center;
+}
+/* .skills-html li{
+  list-style: none;
+} */
+.list-skill {
+  list-style: none;
+}
+.skills-1{
+  /* flex-wrap: wrap; */
+  display: flex;
+  justify-content: space-around;
+  /* margin: 20px; */
+  margin-top: 77px;
+  margin-bottom: 87px;
+}
+.skills-2 {
+  justify-content: space-around;
+  display: flex;
+}
+
+/* .skills {
+  width: 500px;
+  height: 100px;
+} */
+.skills-html .bar{
+  height: 5px;
+  background-color: rgb(102, 104, 198);
+  border-radius: 20px;
+  width: 300px;
+  display: block;
+}
+.skills-html .html {
+  height: 5px;
+  background-color: rgb(242, 0, 255);
+  width: 290px;
+  display: block;
+  border-radius: 20px;
+  animation: upgrade 2s  ease-in-out
+}
+@keyframes upgrade {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 290px;
+  }
+}
+.skills-css .css {
+  height: 5px;
+  background-color: rgb(242, 0, 255);
+  width: 260px;
+  display: block;
+  border-radius: 20px;
+  animation: css 2s  ease-in-out
+}
+.skills-css  .bar{
+  height: 5px;
+  background-color: rgb(102, 104, 198);
+  border-radius: 20px;
+  width: 300px;
+  display: block;
+}
+@keyframes css {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 250px;
+  }
+}
+.skills-js .js {
+  height: 5px;
+  background-color: rgb(242, 0, 255);
+  width: 240px;
+  display: block;
+  border-radius: 20px;
+  animation: js 2s  ease-in-out
+}
+.skills-js  .bar{
+  height: 5px;
+  background-color: rgb(102, 104, 198);
+  border-radius: 20px;
+  width: 300px;
+  display: block;
+}
+@keyframes js {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 240px;
+  }
+}
+.skills-bs .bs {
+  height: 5px;
+  background-color: rgb(242, 0, 255);
+  width: 240px;
+  display: block;
+  border-radius: 20px;
+  animation: bs 2s  ease-in-out
+}
+.skills-bs  .bar{
+  height: 5px;
+  background-color: rgb(102, 104, 198);
+  border-radius: 20px;
+  width: 300px;
+  display: block;
+}
+@keyframes bs {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 240px;
+  }
+}
+.skills-commu .commu {
+  height: 5px;
+  background-color: rgb(242, 0, 255);
+  width: 280px;
+  display: block;
+  border-radius: 20px;
+  animation: commu 2s  ease-in-out
+}
+.skills-commu  .bar{
+  height: 5px;
+  background-color: rgb(102, 104, 198);
+  border-radius: 20px;
+  width: 300px;
+  display: block;
+}
+@keyframes commu {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 280px;
+  }
+}
+.skills-creat .creat {
+  height: 5px;
+  background-color: rgb(242, 0, 255);
+  width: 230px;
+  display: block;
+  border-radius: 20px;
+  animation: creat 2s  ease-in-out
+}
+.skills-creat  .bar{
+  height: 5px;
+  background-color: rgb(102, 104, 198);
+  border-radius: 20px;
+  width: 300px;
+  display: block;
+}
+@keyframes creat {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 230px;
+  }
+}
+/* ................media query................ */
+@media screen and (max-width: 768px) {
+  .home > h1 {
+    font-size: 3rem;
+  }
+  .quotes {
+    top: 73%;
+    left: 36%;
+    font-size: 0.9rem;
+  }
+  .resume {
+    left: 43%;
+    top: 87%;
+  }
+  .header > nav {
+    display: none;
+  }
+.about-intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+
+/* ........................max-width:575px............. */
+@media screen and (max-width: 575px) {
+  .home {
+    left: 10%;
+  }
+  .quotes {
+    left: 10%;
+  }
+  .resume {
+    left: 12%;
+  }
+}
+
+/* .........................max-width:340px.......... */
+@media screen and (max-width: 340px) {
+  .home > h1 {
+    font-size: 2.7rem;
+  }
+  .quotes {
+    top: 70%;
+  }
+  .resume {
+    top: 85%;
+  }
+}
+
+@media screen and (max-width:502px) {
+  .about-para {
+    width: 370px;
+    flex-wrap: wrap;
+  }
+  .mid-line {
+    width: 90%;
+  }
+  .about-content {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:383px) {
+  .about-para {
+    width: 320px;
+    margin-left: -19px;
+  }
+  .Website {
+    margin-left: -3px;
+  }
+}
+
+@media screen and (max-width:1028px) {
+  .skills-1 {
+    display: flex;
+    flex-direction:column;
+    /* margin: 20px; */
+    align-items: center;
+  }
+  .skills-2 {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .skills-html {
+    margin-bottom: 35px;
+  }
+  .skills-css {
+    margin-bottom: 35px;
+  }
+  .skills-commu {
+    margin-bottom: -50px;
+  }
+.skills-js {
+  margin-bottom: 35px;
+}
+.skills-creat {
+  margin-bottom: 35px;
+}
+}
